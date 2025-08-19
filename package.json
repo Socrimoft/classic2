@@ -1,0 +1,30 @@
+{
+  "name": "kerby64",
+  "version": "0.0.1",
+  "description": "Kerby mini game",
+  "main": "src/game.ts",
+  "scripts": {
+    "prebuild": "typedoc --out dist/docs",
+    "build": "cross-env-shell NODE_ENV=production && mkdir -p dist && rm -r dist && node updateprecacheversionsw.js $(git rev-parse --short HEAD) && webpack",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --port 8080",
+    "doc": "typedoc"
+  },
+  "author": "Socrimoft",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@babylonjs/core": "8.8.5",
+    "@babylonjs/inspector": "8.8.5",
+    "@babylonjs/loaders": "8.8.5",
+    "@babylonjs/materials": "8.8.5",
+    "copy-webpack-plugin": "^13.0.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.6.3",
+    "raw-loader": "^4.0.2",
+    "ts-loader": "^9.5.2",
+    "typedoc": "^0.28.5",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
+}

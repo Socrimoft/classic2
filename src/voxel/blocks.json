@@ -1,0 +1,329 @@
+{
+    "sediment": {
+        "dirt": [
+            "dirt.png",
+            "dirt.png",
+            "dirt.png",
+            "dirt.png",
+            "dirt.png",
+            "dirt.png"
+        ],
+        "stone": [
+            "stone.png",
+            "stone.png",
+            "stone.png",
+            "stone.png",
+            "stone.png",
+            "stone.png"
+        ],
+        "glass": [
+            "glass.png",
+            "glass.png",
+            "glass.png",
+            "glass.png",
+            "glass.png",
+            "glass.png"
+        ],
+        "obsidian": [
+            "obsidian.png",
+            "obsidian.png",
+            "obsidian.png",
+            "obsidian.png",
+            "obsidian.png",
+            "obsidian.png"
+        ],
+        "grass_block": [
+            "grass_block_side.png",
+            "grass_block_side.png",
+            "grass_block_top.png",
+            "dirt.png",
+            "grass_block_side.png",
+            "grass_block_side.png"
+        ],
+        "sand": [
+            "sand.png",
+            "sand.png",
+            "sand.png",
+            "sand.png",
+            "sand.png",
+            "sand.png"
+        ],
+        "gravel": [
+            "gravel.png",
+            "gravel.png",
+            "gravel.png",
+            "gravel.png",
+            "gravel.png",
+            "gravel.png"
+        ],
+        "clay": [
+            "clay.png",
+            "clay.png",
+            "clay.png",
+            "clay.png",
+            "clay.png",
+            "clay.png"
+        ],
+        "snow": [
+            "snow.png",
+            "snow.png",
+            "snow.png",
+            "snow.png",
+            "snow.png",
+            "snow.png"
+        ],
+        "ice": [
+            "ice.png",
+            "ice.png",
+            "ice.png",
+            "ice.png",
+            "ice.png",
+            "ice.png"
+        ],
+        "cobblestone": [
+            "cobblestone.png",
+            "cobblestone.png",
+            "cobblestone.png",
+            "cobblestone.png",
+            "cobblestone.png",
+            "cobblestone.png"
+        ],
+        "stone_bricks": [
+            "stone_bricks.png",
+            "stone_bricks.png",
+            "stone_bricks.png",
+            "stone_bricks.png",
+            "stone_bricks.png",
+            "stone_bricks.png"
+        ],
+        "bricks": [
+            "bricks.png",
+            "bricks.png",
+            "bricks.png",
+            "bricks.png",
+            "bricks.png",
+            "bricks.png"
+        ],
+        "glowstone": [
+            "glowstone.png",
+            "glowstone.png",
+            "glowstone.png",
+            "glowstone.png",
+            "glowstone.png",
+            "glowstone.png"
+        ],
+        "furnace": [
+            "furnace_front.png",
+            "furnace_side.png",
+            "furnace_top.png",
+            "furnace_top.png",
+            "furnace_side.png",
+            "furnace_side.png"
+        ],
+        "pumpkin": [
+            "pumpkin_side.png",
+            "pumpkin_side.png",
+            "pumpkin_top.png",
+            "pumpkin_side.png",
+            "pumpkin_side.png",
+            "pumpkin_side.png"
+        ],
+        "carved_pumpkin": [
+            "carved_pumpkin.png",
+            "pumpkin_side.png",
+            "pumpkin_top.png",
+            "pumpkin_side.png",
+            "pumpkin_side.png",
+            "pumpkin_side.png"
+        ]
+    },
+    "wood": {
+        "oak_leaves": [
+            "oak_leaves.png",
+            "oak_leaves.png",
+            "oak_leaves.png",
+            "oak_leaves.png",
+            "oak_leaves.png",
+            "oak_leaves.png"
+        ],
+        "oak_log": [
+            "oak_log.png",
+            "oak_log.png",
+            "oak_log_top.png",
+            "oak_log_top.png",
+            "oak_log.png",
+            "oak_log.png"
+        ],
+        "oak_planks": [
+            "oak_planks.png",
+            "oak_planks.png",
+            "oak_planks.png",
+            "oak_planks.png",
+            "oak_planks.png",
+            "oak_planks.png"
+        ],
+        "tnt": [
+            "tnt_side.png",
+            "tnt_side.png",
+            "tnt_top.png",
+            "tnt_bottom.png",
+            "tnt_side.png",
+            "tnt_side.png"
+        ],
+        "bookshelf": [
+            "bookshelf.png",
+            "bookshelf.png",
+            "oak_planks.png",
+            "oak_planks.png",
+            "bookshelf.png",
+            "bookshelf.png"
+        ],
+        "coal_block": [
+            "coal_block.png",
+            "coal_block.png",
+            "coal_block.png",
+            "coal_block.png",
+            "coal_block.png",
+            "coal_block.png"
+        ],
+        "hay_block": [
+            "hay_block_side.png",
+            "hay_block_side.png",
+            "hay_block_top.png",
+            "hay_block_top.png",
+            "hay_block_side.png",
+            "hay_block_side.png"
+        ],
+        "crafting_table": [
+            "crafting_table_front.png",
+            "crafting_table_side.png",
+            "crafting_table_top.png",
+            "oak_planks.png",
+            "crafting_table_side.png",
+            "crafting_table_side.png"
+        ]
+    },
+    "ore": {
+        "diamond_ore": [
+            "diamond_ore.png",
+            "diamond_ore.png",
+            "diamond_ore.png",
+            "diamond_ore.png",
+            "diamond_ore.png",
+            "diamond_ore.png"
+        ],
+        "gold_ore": [
+            "gold_ore.png",
+            "gold_ore.png",
+            "gold_ore.png",
+            "gold_ore.png",
+            "gold_ore.png",
+            "gold_ore.png"
+        ],
+        "redstone_ore": [
+            "redstone_ore.png",
+            "redstone_ore.png",
+            "redstone_ore.png",
+            "redstone_ore.png",
+            "redstone_ore.png",
+            "redstone_ore.png"
+        ],
+        "coal_ore": [
+            "coal_ore.png",
+            "coal_ore.png",
+            "coal_ore.png",
+            "coal_ore.png",
+            "coal_ore.png",
+            "coal_ore.png"
+        ],
+        "emerald_ore": [
+            "emerald_ore.png",
+            "emerald_ore.png",
+            "emerald_ore.png",
+            "emerald_ore.png",
+            "emerald_ore.png",
+            "emerald_ore.png"
+        ],
+        "lapis_ore": [
+            "lapis_ore.png",
+            "lapis_ore.png",
+            "lapis_ore.png",
+            "lapis_ore.png",
+            "lapis_ore.png",
+            "lapis_ore.png"
+        ],
+        "iron_ore": [
+            "iron_ore.png",
+            "iron_ore.png",
+            "iron_ore.png",
+            "iron_ore.png",
+            "iron_ore.png",
+            "iron_ore.png"
+        ]
+    },
+    "notABlock": {
+        "sugar_cane": [
+            "sugar_cane.png"
+        ],
+        "short_grass": [
+            "tall_grass_top.png"
+        ],
+        "long_grass": [
+            "tall_grass_bottom.png"
+        ],
+        "red_mushroom": [
+            "red_mushroom.png"
+        ],
+        "poppy": [
+            "poppy.png"
+        ],
+        "oak_sappling": [
+            "oak_sapling.png"
+        ],
+        "dandelion": [
+            "dandelion.png"
+        ]
+    },
+    "other": {
+        "bedrock": [
+            "bedrock.png",
+            "bedrock.png",
+            "bedrock.png",
+            "bedrock.png",
+            "bedrock.png",
+            "bedrock.png"
+        ],
+        "jukebox": [
+            "jukebox_side.png",
+            "jukebox_side.png",
+            "jukebox_top.png",
+            "jukebox_side.png",
+            "jukebox_side.png",
+            "jukebox_side.png"
+        ],
+        "debug": [
+            "debug.png",
+            "debug.png",
+            "debug.png",
+            "debug.png",
+            "debug.png",
+            "debug.png"
+        ],
+        "debug2": [
+            "debug2.png",
+            "debug2.png",
+            "debug2.png",
+            "debug2.png",
+            "debug2.png",
+            "debug2.png"
+        ],
+        "water": [
+            "water.png",
+            "water.png",
+            "water.png",
+            "water.png",
+            "water.png",
+            "water.png"
+        ]
+    }
+}

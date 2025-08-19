@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "WorldOfSpell";
+    src: url("./assets/fonts/WorldOfSpell.ttf") format("truetype");
+}
+body {
+    background: black;
+    width: 100%;
+    height: 100%;
+}
+body:before {
+    content: "";
+    /* Contenu vide */
+    font-family: 'WorldOfSpell';
+    /* Force le chargement */
+    position: absolute;
+    opacity: 0;
+    /* Rend invisible */
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+#LoadingScreen{
+    background-color:black;
+    color: white;
+    font-size:50px;
+    text-align:center;
+    width:100%;
+    height:100%;
+    
+    div {
+        position: absolute;
+        bottom: 5lvh;
+        left: 5lvh;
+        animation: spin 1s linear infinite;
+        width: 20lvh;
+        height:20lvh;
+
+    }
+}

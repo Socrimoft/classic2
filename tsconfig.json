@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "noResolve": false,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  }
+}
