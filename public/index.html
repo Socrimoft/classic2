@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Kerby64</title>
-    <script type="module" async>
-        if ('serviceWorker' in navigator && location.protocol === 'https:') {
-            try {
-                const registration = await navigator.serviceWorker.register('/sw.js', { scope: '/' });
-            } catch (error) {
-                console.log('Service Worker registration failed:', error);
+    <head>
+        <meta charset="UTF-8">
+        <title>classic2</title>
+        <script type="module" async>
+            if (
+                "serviceWorker" in navigator &&
+                location.protocol === "https:"
+            ) {
+                try {
+                    const registration = await navigator
+                        .serviceWorker.register("/sw.js", {
+                            scope: "/",
+                        });
+                } catch (error) {
+                    console.log(
+                        "Service Worker registration failed:",
+                        error,
+                    );
+                }
             }
-        }
-    </script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+        </script>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-<body>
-    <div id="LoadingScreen">
-        <p>There is a problem with the audio engine, try to click on the screen to unblock.</p>
-        <div><img src="assets/images/loading.png" alt="Spinning Image" width="100%"></div>
-    </div>
-</body>
-
+    <body>
+        <div id="LoadingScreen">
+            <p>
+                There is a problem with the audio engine, try to click on the
+                screen to unblock.
+            </p>
+            <div>
+                <img
+                    src="assets/images/loading.png"
+                    alt="Spinning Image"
+                    width="100%"
+                >
+            </div>
+        </div>
+    </body>
 </html>

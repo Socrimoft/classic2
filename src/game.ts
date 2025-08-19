@@ -8,7 +8,7 @@ import { LevelScene } from "./scenes/levelScene";
 import { GameOverScene } from "./scenes/gameOverScene";
 import toonVertexShader from "./shaders/toon/vertex.wgsl";
 import toonFragmentShader from "./shaders/toon/fragment.wgsl";
-import { KerbyLoadingScreen } from "./loadingScreen";
+import { classicLoadingScreen } from "./loadingScreen";
 import { AudioManager } from "./audioManager";
 import { IntroScene } from "./scenes/introScene";
 
@@ -55,7 +55,7 @@ export class Game {
         }
         this.canvas = this.createCanvas();
         this.engine = this.createEngine();
-        this.engine.loadingScreen = new KerbyLoadingScreen("");
+        this.engine.loadingScreen = new classicLoadingScreen("");
         if (process.env.NODE_ENV === "development") {
             Logger.LogLevels = Logger.AllLogLevel; // all logs
             Logger.Log("Development mode enabled");

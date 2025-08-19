@@ -24,9 +24,9 @@ export class IntroScene extends Scene {
         light.diffuse = new Color3(1, 0.95, 0.8);
 
         if (sessionStorage.getItem("isFirstLoading") == null) {
-            const container = await LoadAssetContainerAsync("./assets/models/kerby_menuscene.glb", this);
+            const container = await LoadAssetContainerAsync("./assets/models/classic_menuscene.glb", this);
             const root = (container.rootNodes.length == 1 && container.rootNodes[0] instanceof Mesh) ? container.rootNodes[0] : container.createRootMesh();
-            root.name = "kerby_menuscene";
+            root.name = "classic_menuscene";
 
             sessionStorage.setItem("isFirstLoading", "1");
 
@@ -44,15 +44,15 @@ export class IntroScene extends Scene {
                 this.activeCamera = camera;
 
             const camAnim = container.animationGroups.find(ag => ag.name.toLowerCase().includes("camera"));
-            const kerbyAnim = container.animationGroups.find(ag => ag.name.toLowerCase().includes("kirby"));
+            const classicAnim = container.animationGroups.find(ag => ag.name.toLowerCase().includes("kirby"));
             const text1Anim = container.animationGroups.find(ag => ag.name.toLowerCase().includes("text.001"));
             const text2Anim = container.animationGroups.find(ag => ag.name.toLowerCase().includes("text.008"));
 
             camAnim?.play(false);
-            kerbyAnim?.play(false);
+            classicAnim?.play(false);
             text1Anim?.play(false);
             text2Anim?.play(false);
-            kerbyAnim?.onAnimationEndObservable.add(() => this.switchMainMenuScene(), undefined, true, undefined, true);
+            classicAnim?.onAnimationEndObservable.add(() => this.switchMainMenuScene(), undefined, true, undefined, true);
         } else {
             new UniversalCamera("Camera", new Vector3(0, 1, -10), this);
             console.log("Intro scene already loaded, switching to main menu directly.");

@@ -1,7 +1,7 @@
 {
-  "name": "kerby64",
+  "name": "classic2",
   "version": "0.0.1",
-  "description": "Kerby mini game",
+  "description": "classic",
   "main": "src/game.ts",
   "scripts": {
     "prebuild": "typedoc --out dist/docs",
@@ -12,19 +12,19 @@
   "author": "Socrimoft",
   "license": "GPL-3.0",
   "devDependencies": {
-    "@babylonjs/core": "8.8.5",
-    "@babylonjs/inspector": "8.8.5",
-    "@babylonjs/loaders": "8.8.5",
-    "@babylonjs/materials": "8.8.5",
-    "copy-webpack-plugin": "^13.0.0",
-    "cross-env": "^7.0.3",
-    "html-webpack-plugin": "^5.6.3",
+    "@babylonjs/core": "8.23.1",
+    "@babylonjs/inspector": "8.23.1",
+    "@babylonjs/loaders": "8.23.1",
+    "@babylonjs/materials": "8.23.1",
+    "copy-webpack-plugin": "^13.0.1",
+    "cross-env": "^10.0.0",
+    "html-webpack-plugin": "^5.6.4",
     "raw-loader": "^4.0.2",
     "ts-loader": "^9.5.2",
-    "typedoc": "^0.28.5",
-    "typescript": "^5.8.3",
-    "webpack": "^5.99.9",
+    "typedoc": "^0.28.10",
+    "typescript": "^5.9.2",
+    "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "^5.2.2"
   }
 }

@@ -13,14 +13,14 @@ enum CameraMode {
 export class Camera3DController implements Component {
     private tpsCamera: UniversalCamera;
     private fpsCamera: UniversalCamera;
-    private kerby: Mesh;
+    private classic: Mesh;
     public currentCamera: CameraMode = 0;
     private scene: LevelScene;
     private tpsCameraCollider: Mesh;
 
     constructor(private targetEntity: Player, private input: InputManager) {
         this.scene = this.targetEntity.scene;
-        this.kerby = this.targetEntity.meshRef;
+        this.classic = this.targetEntity.meshRef;
         this.tpsCamera = new UniversalCamera("tpsCamera", Vector3.Zero(), this.scene);
         this.tpsCameraCollider = new Mesh("tpsCameraCollider", this.scene);
         this.tpsCameraCollider.checkCollisions = true;
@@ -45,7 +45,7 @@ export class Camera3DController implements Component {
 
     private changeActiveCamera(forceCameraMode?: CameraMode) {
         this.currentCamera = forceCameraMode ?? (this.currentCamera + 1) % 3;
-        this.kerby.setEnabled(!!this.currentCamera);
+        this.classic.setEnabled(!!this.currentCamera);
         this.scene.activeCamera = this.activeCamera;
     }
 

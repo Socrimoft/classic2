@@ -126,7 +126,7 @@ export class WorldGui {
         });
 
         reportButton.onPointerClickObservable.add(() => {
-            window.open("https://github.com/Socrimoft/Kerby64/issues", "_blank");
+            window.open("https://github.com/Socrimoft/classic2/issues", "_blank");
         });
 
         saveButton.onPointerClickObservable.add(() => {

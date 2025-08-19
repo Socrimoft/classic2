@@ -3,7 +3,7 @@
         "src/**/*.ts",
         "src/**/*.json"
     ],
-    "name": "Kerby64",
+    "name": "classic2",
     "readme": "README.md",
     "exclude": [
         "node_modules/**",

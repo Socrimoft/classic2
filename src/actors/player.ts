@@ -5,8 +5,6 @@ import { GameEntity } from "./gameEntity";
 import { Component } from "../components/component";
 import { TransformNode, Vector3 } from "@babylonjs/core";
 import { EntityController } from "../components/entityController";
-import { RushController } from "../components/rushController";
-import { BirdController } from "../components/birdController";
 import { Camera3DController } from "../components/camera3DController";
 
 export type CameraController = Camera2DController | Camera3DController

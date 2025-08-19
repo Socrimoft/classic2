@@ -77,10 +77,11 @@ export class MainMenuScene extends Scene {
         this.addGameTitleToMenu(guiMenu);
         guiMenu.addSimpleButton("start", "Start", "20%", "10%", "rgb(255,20,147)", "black", "-10%", "0px", 10, 0, Control.VERTICAL_ALIGNMENT_BOTTOM, Control.HORIZONTAL_ALIGNMENT_CENTER, () => {
             guiMenu.ui.dispose();
-            this.createLevelSelectionMenu("Choose a game to play", ["Kirby Rush", "Kirby Bird", "Kirby World", "Kirby Classic"], this.gameSelectionCallback.bind(this));
+            //this.createLevelSelectionMenu("Choose a game to play", ["Kirby Rush", "Kirby Bird", "Kirby World", "Kirby Classic"], this.gameSelectionCallback.bind(this));
+            this.createWorldMenu();
         });
         guiMenu.addImageButton("github", "", "./assets/images/github.png", "40px", "40px", "40px", "40px", "", "black", "10px", "10px", 10, 0, Control.VERTICAL_ALIGNMENT_TOP, Control.HORIZONTAL_ALIGNMENT_LEFT, () => {
-            window.open("https://github.com/Socrimoft/Kerby64");
+            window.open("https://github.com/Socrimoft/classic2");
         });
     }
     /**
@@ -90,14 +91,14 @@ export class MainMenuScene extends Scene {
         const verticalAlign = Control.VERTICAL_ALIGNMENT_CENTER;
         const horizontalAlign = Control.HORIZONTAL_ALIGNMENT_CENTER;
         const fontFamily = "WorldOfSpell";
-        menu.addTextBlock("shadowK", "K", 60, "grey", "-30%", "-11%", verticalAlign, horizontalAlign, fontFamily);
-        menu.addTextBlock("shadowE", "e", 60, "grey", "-30%", "-7.5%", verticalAlign, horizontalAlign, fontFamily);
-        menu.addTextBlock("shadowR", "r", 60, "grey", "-30%", "-3.5%", verticalAlign, horizontalAlign, fontFamily);
-        menu.addTextBlock("shadowB", "b", 60, "grey", "-30%", "0%", verticalAlign, horizontalAlign, fontFamily);
-        menu.addTextBlock("shadowY", "y", 60, "grey", "-30%", "3.5%", verticalAlign, horizontalAlign, fontFamily);
-        menu.addTextBlock("shadow6", "6", 60, "grey", "-30%", "7.5%", verticalAlign, horizontalAlign, fontFamily);
-        menu.addTextBlock("shadow4", "4", 60, "grey", "-30%", "11%", verticalAlign, horizontalAlign, fontFamily);
-        menu.addTextBlock("title", "Kerby64", 50, "white", "-30%", "0%", verticalAlign, horizontalAlign, fontFamily);
+        menu.addTextBlock("shadowK", "C", 60, "grey", "-30%", "-11%", verticalAlign, horizontalAlign, fontFamily);
+        menu.addTextBlock("shadowE", "l", 60, "grey", "-30%", "-7.5%", verticalAlign, horizontalAlign, fontFamily);
+        menu.addTextBlock("shadowR", "a", 60, "grey", "-30%", "-3.5%", verticalAlign, horizontalAlign, fontFamily);
+        menu.addTextBlock("shadowB", "s", 60, "grey", "-30%", "0%", verticalAlign, horizontalAlign, fontFamily);
+        menu.addTextBlock("shadowY", "s", 60, "grey", "-30%", "3.5%", verticalAlign, horizontalAlign, fontFamily);
+        menu.addTextBlock("shadow6", "i", 60, "grey", "-30%", "7.5%", verticalAlign, horizontalAlign, fontFamily);
+        menu.addTextBlock("shadow4", "c", 60, "grey", "-30%", "11%", verticalAlign, horizontalAlign, fontFamily);
+        menu.addTextBlock("title", "Classic", 50, "white", "-30%", "0%", verticalAlign, horizontalAlign, fontFamily);
 
     }
 

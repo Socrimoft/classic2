@@ -99,7 +99,7 @@ export class InputManager extends MouseManager {
                     break;
                 case (Key.Hud):         //F1
                     if (!this.isWorldPlaying)
-                        window.open("https://github.com/Socrimoft/Kerby64", "_blank");
+                        window.open("https://github.com/Socrimoft/classic2", "_blank");
                 case (Key.ScreenShot):  //F2
                 case (Key.Stats):       //F3
                 case (Key.Camera):      //F5

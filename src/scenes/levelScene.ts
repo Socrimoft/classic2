@@ -3,18 +3,8 @@ import { AdvancedDynamicTexture, TextBlock } from "@babylonjs/gui";
 import { InputManager } from "../inputManager";
 import { Player } from "../actors/player";
 import { Environment } from "../environments/environment";
-import { Bird } from "../environments/minigames/bird";
-import { Rush } from "../environments/minigames/rush";
-import { BirdController } from "../components/birdController";
-import { RushController } from "../components/rushController";
 import { World } from "../environments/minigames/world";
 import { WorldController } from "../components/worldController";
-import { ClassicController } from "../components/classicController";
-import { KirClassic } from "../environments/minigames/classicLevels/kirbyClassic";
-import { KirCity } from "../environments/minigames/classicLevels/kirbyCity";
-import { KirBros } from "../environments/minigames/classicLevels/kirBros";
-import { KirbyKawaii } from "../environments/minigames/classicLevels/kirbyKawaii";
-import { KirDoom } from "../environments/minigames/classicLevels/kirDoom";
 
 enum loadableGame {
     rush = 1,
@@ -136,16 +126,8 @@ export class LevelScene extends Scene {
 
         this.input.actualGame = gameToLoad;
 
-        switch (gameToLoad) {
-            case loadableGame.bird:
-                this.environment = new Bird(this, this.player, _seed);
-                await this.environment.load();
-                this.updateNavigatorHistory({ game: "bird", seed: this.environment.seed.toString() });
-                await this.player.instanciate(playerpos, playerrot, this.input);
-                this.player.addComponent(new BirdController(this.player, this.input));
-                break;
-
-            case loadableGame.world:
+        //switch (gameToLoad) {
+        //    case loadableGame.world:
                 if (typeof classicLevel === "string") {
                     classicLevel = Object.values(worldType).indexOf(classicLevel.toLowerCase()) + 1;
                 }
@@ -161,34 +143,8 @@ export class LevelScene extends Scene {
                 const controller = new WorldController(this.player, this.input);
                 controller.setupGUI();
                 this.player.addComponent(controller);
-                break;
-
-            case loadableGame.classic:
-                if (typeof classicLevel === "string") {
-                    classicLevel = Object.values(classicLoadableLevel).indexOf(classicLevel.toLowerCase())
-                };
-                if (!LevelScene.isClassicLevelValid(classicLevel)) {
-                    classicLevel = classicLoadableLevel.classic;
-                }
-                const classicClass = [KirClassic, KirCity, KirBros, KirbyKawaii, KirDoom][classicLevel];
-                const classicLevelName = Object.values(classicLoadableLevel)[classicLevel] as string;
-
-                this.environment = new classicClass(this, this.player, _seed);
-                Logger.Log("Loading classic level: " + classicLevelName);
-                await this.environment.load(classicLevel);
-                this.updateNavigatorHistory({ game: "classic", seed: this.environment.seed.toString(), classic: classicLevelName });
-                await this.player.instanciate(playerpos, playerrot, this.input);
-                this.player.addComponent(new ClassicController(this.player, this.input));
-                break;
-
-            default:
-                this.environment = new Rush(this, this.player, _seed);
-                await this.environment.load();
-                this.updateNavigatorHistory({ game: "rush", seed: this.environment.seed.toString() });
-                await this.player.instanciate(playerpos, playerrot, this.input);
-                this.player.addComponent(new RushController(this.player, this.input));
-                break;
-        };
+                //break;
+        //};
 
         this.player.activateEntityComponents();
 

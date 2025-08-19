@@ -1,11 +1,11 @@
 import { ILoadingScreen } from "@babylonjs/core";
 
 /**
- * KerbyLoadingScreen is a custom loading screen for the Kerby game.\
+ * classicLoadingScreen is a custom loading screen for the classic game.\
  * Basically, it shows or hides a div that acts as a loading screen.
  * @implements {ILoadingScreen}
  */
-export class KerbyLoadingScreen implements ILoadingScreen {
+export class classicLoadingScreen implements ILoadingScreen {
     public loadingUIBackgroundColor: string;
     private div: HTMLDivElement;
     private p: HTMLParagraphElement;

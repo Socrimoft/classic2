@@ -1,8 +1,8 @@
-![GitHub package.json version](https://img.shields.io/github/package-json/v/socrimoft/Kerby64?label=Version&color=green)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/socrimoft/classic2?label=Version&color=green)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![GitHub package.json dev/peer/optional dependency version](https://img.shields.io/github/package-json/dependency-version/socrimoft/Kerby64/dev/%40babylonjs%2Fcore?label=Babylon.js&color=orange)](https://doc.babylonjs.com/whats-new/)
+[![GitHub package.json dev/peer/optional dependency version](https://img.shields.io/github/package-json/dependency-version/socrimoft/classic2/dev/%40babylonjs%2Fcore?label=Babylon.js&color=orange)](https://doc.babylonjs.com/whats-new/)
 
-**Kerby64** is a compilation of mini-games built with
+**classic2** is an attempt at recreating Minecraft Classic with
 [Babylon.js](https://babylonjs.com/). It features procedural terrain generation,
 custom-made shader material and compute shaders, and dynamic rendering
 techniques.
@@ -15,38 +15,28 @@ allowfullscreen></iframe>
 
 A GitHub action is configured to deploy the latest version of the game online.
 You can access it at
-[https://kerby64.socrimoft.games/](https://kerby64.socrimoft.games/)
+[https://classic2.socrimoft.games/](https://classic2.socrimoft.games/)
 
 **IMPORTANT**: A [WebGPU-compatible browser](https://caniuse.com/webgpu) is
 needed to run the game (e.g., Chrome, Edge)
 
 ## Table of Contents
 
-1. [Games list](#games-list)
-2. [The team](#the-team)
-3. [Project structure and documentation](#project-structure-and-documentation)
-4. [How to run locally](#how-to-run-locally)
-5. [Acknowledgments](#acknowledgments)
-
-## Games list
-
-- **Rush**: Never-ending, random-generated platformer with mario world look.
-- **Bird**: Flappy Bird with Mario theme.
-- **World**: Attempt at creating Minecraft on a web game engine with the help of
-  compute shader to leverage GPU for chunk generation.
-- **Classic**: Kirby's dream land remake.
+1. [The team](#the-team)
+2. [Project structure and documentation](#project-structure-and-documentation)
+3. [How to run locally](#how-to-run-locally)
+4. [Acknowledgments](#acknowledgments)
 
 ## The team
 
-- **Dorian REYNIER**, aka [Fenris1801](https://github.com/Fenris1801): Bird,
-  Classic
-- **Loïc ANDRÉ**, aka [Loic-An](https://github.com/Loic-An): World
-- **Ludovic CLOLOT**, aka [Ludoclt](https://github.com/Ludoclt): Rush
+- **Dorian REYNIER**, aka [Fenris1801](https://github.com/Fenris1801)
+- **Loïc ANDRÉ**, aka [Loic-An](https://github.com/Loic-An)
+- **Ludovic CLOLOT**, aka [Ludoclt](https://github.com/Ludoclt)
 
 ## Project structure and documentation
 
 Latest documentation is available at
-[socrimoft.github.io/Kerby64/](https://socrimoft.github.io/Kerby64/) or can be
+[socrimoft.github.io/classic2/](https://socrimoft.github.io/classic2/) or can be
 made locally with the command
 
 ```bash
@@ -56,7 +46,7 @@ npm run doc
 Here's how the game is organized:
 
 ```
-Kerby64/
+classic2/
 ├── src/
 |   ├── */                    # 
 │   ├── audioManager.ts       # Class that instanciate AudioEngineV2
@@ -81,8 +71,8 @@ Next, follow thoses procedures:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Socrimoft/Kerby64.git
-   cd Kerby64
+   git clone https://github.com/Socrimoft/classic2.git
+   cd classic2
    ```
 
 2. Install dependencies:
